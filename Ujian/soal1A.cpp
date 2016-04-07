@@ -26,15 +26,15 @@ int main(){
 	}else{
 		while(!feof(mhsFile))
 		{
-			fscanf(mhsFile,"%s\t%s\t%s\t%s\t\n",mhs.npm,mhs.nm,mhs.mk,mhs.nl);
+				fscanf(mhsFile,"%s\t%s\t%s\t%s\t\n",mhs.npm,mhs.nm,mhs.mk,mhs.nl);
 			if(strcmp(mhs.mk,"Alpro2")==0)
 			{
+				printf("%s\n",mhs.npm);
 				fprintf(file1,"%s\t%s\t%s\t%s\t\n",mhs.npm,mhs.nm,mhs.mk,mhs.nl);
 			}else{
 				
 				fprintf(file2,"%s\t%s\t%s\t%s\t\n",mhs.npm,mhs.nm,mhs.mk,mhs.nl);
 			}
-			
 				
 		//	printf("%s\t%s\t%s\t%s\t",mhs.npm,mhs.nm,mhs.mk,mhs.nl);
 		}
